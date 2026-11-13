@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rohan Marne – Software developer focused on Flutter, mobile app development, and full-stack technologies." />
+  <title>Rohan Marne | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress"></div>
+
+  <!-- Particle Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">RM</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <div class="theme-toggle" id="theme-toggle" title="Toggle theme"></div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <span class="hero-badge">⟡ Welcome to my universe</span>
+      <h1>Hi, I'm Rohan Marne</h1>
+      <p class="hero-subtitle">Software Developer&ensp;|&ensp;Flutter &amp; Mobile App Development</p>
+      <div class="hero-typing">
+        <span id="typing-text"></span><span class="cursor-blink"></span>
+      </div>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about" id="about">
+    <div class="section-header reveal">
+      <h2>About Me</h2>
+      <p>Turning ideas into intelligent, impactful technology.</p>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-image-wrapper reveal">
+        <div class="about-avatar">
+          R
+          <!-- Replace YOUR_PHOTO_FILE.jpg with your photo's path or filename. -->
+          <img src="YOUR_PHOTO_FILE.jpg" alt="Photo of Rohan Marne" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;" onerror="this.hidden = true" />
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <h3>Who I Am</h3>
+        <p>
+          I'm a Computer Engineering student and aspiring software engineer with a diploma in Information Technology
+          and six months of hands-on experience building cross-platform mobile apps with Flutter and Dart.
+          I enjoy solving technical problems and creating user-focused software.
+        </p>
+        <p>
+          My experience spans responsive interfaces, REST API integration, databases, and web development.
+          I have built mobile and web projects for service management, cultural literature, and learning.
+        </p>
+        <div class="about-highlights">
+          <span class="highlight-tag">📱 Flutter &amp; Mobile Apps</span>
+          <span class="highlight-tag">🌐 Web Development</span>
+          <span class="highlight-tag">🔌 REST APIs</span>
+          <span class="highlight-tag">🗄️ Firebase &amp; SQL</span>
+          <span class="highlight-tag">🧩 Problem Solving</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="skills" id="skills">
+    <div class="section-header reveal">
+      <h2>My Skills</h2>
+      <p>Technologies I work with to bring ideas to life.</p>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">☕</div>
+        <h4>Java</h4>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-width="85"></div>
+        </div>
+        <div class="skill-percent">85%</div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">📱</div>
+        <h4>Flutter</h4>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-width="80"></div>
+        </div>
+        <div class="skill-percent">80%</div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">💙</div>
+        <h4>JavaScript</h4>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-width="60"></div>
+        </div>
+        <div class="skill-percent">60%</div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🐍</div>
+        <h4>Python</h4>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-width="75"></div>
+        </div>
+        <div class="skill-percent">75%</div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🧠</div>
+        <h4>HTML5 &amp; CSS3</h4>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-width="65"></div>
+        </div>
+        <div class="skill-percent">65%</div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🔗</div>
+        <h4>React.js</h4>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-width="55"></div>
+        </div>
+        <div class="skill-percent">55%</div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🗄️</div>
+        <h4>AngularJS</h4>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-width="70"></div>
+        </div>
+        <div class="skill-percent">70%</div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-icon">🌐</div>
+        <h4>REST APIs &amp; SQL</h4>
+        <div class="skill-bar-container">
+          <div class="skill-bar" data-width="65"></div>
+        </div>
+        <div class="skill-percent">65%</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects" id="projects">
+    <div class="section-header reveal">
+      <h2>Projects</h2>
+      <p>Innovative solutions built with passion and purpose.</p>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Replace YOUR_USERNAME and each *_REPOSITORY placeholder with your GitHub URLs. -->
+      <!-- Project 1 -->
+      <a class="project-card reveal" href="https://github.com/YOUR_USERNAME/SEVASAKHI_REPOSITORY" target="_blank" rel="noopener noreferrer">
+        <div class="project-image">🏥</div>
+        <div class="project-info">
+          <h3>Sevasakhi – Service Management App</h3>
+          <p>A cross-platform mobile application for service management, built with a responsive interface focused on usability and performance.</p>
+          <div class="project-tags">
+            <span>Flutter</span><span>Dart</span><span>Firebase / SQL</span><span>AI Integration</span>
+          </div>
+          <span class="project-link">View Project →</span>
+        </div>
+      </a>
+
+      <!-- Project 2 -->
+      <a class="project-card reveal" href="https://github.com/YOUR_USERNAME/PRABHAT-VACHAN_REPOSITORY" target="_blank" rel="noopener noreferrer">
+        <div class="project-image">🎮</div>
+        <div class="project-info">
+          <h3>Prabhat Vachan – Cultural Literature Portal</h3>
+          <p>A digital library for Indian cultural literature, designed with a freemium subscription model and browser-based storage.</p>
+          <div class="project-tags">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>AngularJS / React</span><span>REST APIs</span>
+          </div>
+          <span class="project-link">View Project →</span>
+        </div>
+      </a>
+
+      <!-- Project 3 -->
+      <a class="project-card reveal" href="https://github.com/YOUR_USERNAME/PORTFOLIO_REPOSITORY" target="_blank" rel="noopener noreferrer">
+        <div class="project-image">💻</div>
+        <div class="project-info">
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal portfolio presenting projects, technical skills, and contact information.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js</span>
+          </div>
+          <span class="project-link">View Project →</span>
+        </div>
+      </a>
+
+      <!-- Project 4 -->
+      <a class="project-card reveal" href="https://github.com/YOUR_USERNAME/SKILLVERSE_REPOSITORY" target="_blank" rel="noopener noreferrer">
+        <div class="project-image">🎮</div>
+        <div class="project-info">
+          <h3>SkillVerse – Skill Development Platform</h3>
+          <p>A concept for a gamified student learning platform with learning paths, skill tracking, portfolios, achievements, and freelance opportunities.</p>
+          <div class="project-tags">
+            <span>Learning Paths</span><span>Skill Tracking</span><span>Gamification</span>
+          </div>
+          <span class="project-link">View Project →</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ========== JOURNEY ========== -->
+  <section class="journey" id="journey">
+    <div class="section-header reveal">
+      <h2>My Journey</h2>
+      <p>The milestones that shape my path in tech.</p>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline-container">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-year">In progress</div>
+          <h4>Bachelor of Engineering – Computer Engineering</h4>
+          <p>Second-year student at Bharati Vidyapeeth's College of Engineering, Lavale.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-year">Completed</div>
+          <h4>Diploma in Information Technology</h4>
+          <p>Graduated from Sou. Venutai Chavan Polytechnic, Pune (MSBTE Board).</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-year">April 2025 – September 2025</div>
+          <h4>Mobile Application Development Intern – Incubators Systems</h4>
+          <p>Built and maintained Flutter applications, implemented UI features, supported testing and performance improvements, and contributed to project documentation.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-year">October 2026 – Present</div>
+          <h4>Campus Ambassador – UNLOX®</h4>
+          <p>Serving as a part-time remote campus ambassador.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="section-header reveal">
+      <h2>Get In Touch</h2>
+      <p>Let's connect and build something amazing together.</p>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+
+      <div class="contact-info-card reveal">
+        <h3>Contact Info</h3>
+        <p>Feel free to reach out for collaborations, opportunities, or just a friendly tech conversation.</p>
+        <div class="contact-item">
+          <div class="contact-item-icon">✉</div>
+          <span><a href="mailto:marnerohan10@gmail.com">marnerohan10@gmail.com</a></span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🔗</div>
+          <span><a href="https://www.linkedin.com/in/rohan-marne-146290334" target="_blank" rel="noopener noreferrer">linkedin.com/in/rohan-marne-146290334</a></span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">☎</div>
+          <span><a href="tel:+919689179691">+91 96891 79691</a></span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <span>Pune, Maharashtra, India</span>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form">
+        <h3>Send a Message</h3>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message ⟶</button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-divider"></div>
+    <div class="footer-socials">
+      <a href="https://github.com/YOUR_USERNAME" class="footer-social-link" title="GitHub" target="_blank" rel="noopener noreferrer">🐙</a>
+      <a href="https://www.linkedin.com/in/rohan-marne-146290334" class="footer-social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">🔗</a>
+      <a href="mailto:marnerohan10@gmail.com" class="footer-social-link" title="Email">✉</a>
+      <a href="tel:+919689179691" class="footer-social-link" title="Phone">☎</a>
+    </div>
+    <p>Designed &amp; Built by <span class="glow-text">Rohan Marne</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
